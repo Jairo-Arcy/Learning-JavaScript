@@ -1,36 +1,36 @@
 ==================================parte-16==========================================
-Eventos s„o aÁıes que ocorrem quando algo acontece, como o carregamento da p·gina, 
+Eventos s√£o a√ß√µes que ocorrem quando algo acontece, como o carregamento da p√°gina, 
 clique do mouse, pressionamento de uma tecla do teclado, rolagem da tela, etc.
-Quando esses eventos ocorrem nÛs podemos indicar que uma funÁ„o deve ser executada.
-Assim podemos responder ‡s interaÁıes do usu·rio, deixando nossa p·gina mais 
-din‚mica e interativa.H· centenas de eventos, e sempre que funcionalidades novas 
-surgem, novos eventos s„o adicionados.Aqui veremos os mais comuns. Como o uso de 
-todos os eventos È igual, vocÍ j· estar· apto a usar qualquer evento.
+Quando esses eventos ocorrem n√≥s podemos indicar que uma fun√ß√£o deve ser executada.
+Assim podemos responder √†s intera√ß√µes do usu√°rio, deixando nossa p√°gina mais 
+din√¢mica e interativa.H√° centenas de eventos, e sempre que funcionalidades novas 
+surgem, novos eventos s√£o adicionados.Aqui veremos os mais comuns. Como o uso de 
+todos os eventos √© igual, voc√™ j√° estar√° apto a usar qualquer evento.
 =======================================tabela======================================
-click: disparado quando um clique È feito com o bot„o esquerdo do mouse
+click: disparado quando um clique √© feito com o bot√£o esquerdo do mouse
 
-dblclick:disparado quando um duplo clique È feito com o bot„o esquerdo do mouse
+dblclick:disparado quando um duplo clique √© feito com o bot√£o esquerdo do mouse
 
-contextmenu:disparado quando o bot„o direito do mouse È clicado
+contextmenu:disparado quando o bot√£o direito do mouse √© clicado
 
 mousemove:disparado continuamente enquanto o cursor se mover sobre um elemento
 
-mousedown:disparado quando o bot„o esquerdo do mouse for pressionado
+mousedown:disparado quando o bot√£o esquerdo do mouse for pressionado
 
-mouseup:disparado quando o bot„o esquerdo do mouse for solto
+mouseup:disparado quando o bot√£o esquerdo do mouse for solto
 ====================================================================================
 ======================================tabela2==============================================
-click:disparado quando um clique È feito com o bot„o esquerdo do mouse
-dblclick:disparado quando um duplo clique È feito com o bot„o esquerdo do mouse
-contextmenu:disparado quando o bot„o direito do mouse È clicado
+click:disparado quando um clique √© feito com o bot√£o esquerdo do mouse
+dblclick:disparado quando um duplo clique √© feito com o bot√£o esquerdo do mouse
+contextmenu:disparado quando o bot√£o direito do mouse √© clicado
 mousemove:disparado continuamente enquanto o cursor se mover sobre um elemento
-mousedown:disparado quando o bot„o esquerdo do mouse for pressionado
-mouseup:disparado quando o bot„o esquerdo do mouse for solto
+mousedown:disparado quando o bot√£o esquerdo do mouse for pressionado
+mouseup:disparado quando o bot√£o esquerdo do mouse for solto
 ====================================================================================
 ====================================tabela-3================================================
-resetd:isparado quando o formul·rio for apagado
-submit:disparado quando o formul·rio for enviado
+resetd:disparado quando o formul√°rio for apagado
+submit:disparado quando o formul√°rio for enviado
 focus:disparado quando um elemento recebe foco
 blur:disparado quando um elemento perde foco
 ====================================================================================
--site da mozilla tem outras refenrencias de html sÛ colocar mozilla developer
+-site da mozilla tem outras refenrencias de html s√≥ colocar mozilla developer
