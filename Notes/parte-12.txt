@@ -1,0 +1,102 @@
+=======================================Parte-12====================================
+-já sabemos alguns comandos de dentro dos arrays, agora iremos nos aprofundar 
+com o que já sabemos e muito mais 
+-se quisermos testar uma condição se todos os numeros do array são algo usamos o 
+every
+------------------------------------------------------------------------------------
+	EX:
+*testamos antes as funções de callbacks que são as que iremos utlizar como 
+chamada
+	myArray.every(function(n){
+	return n%2 == 0
+
+	//dessa forma o código irá testar se todos(every) numeros são pares
+*podemos fazer também como é somente uma linha com as arrow functions ficando da 
+seguinte forma
+	myArray.every(n => n%2 == 0)
+
+
+}
+------------------------------------------------------------------------------------
+-da mesma forma temos o filter que irá retornar somente os numeros impares
+------------------------------------------------------------------------------------
+	EX:
+
+		myArray.filter(n => n%2 !== 0)
+	//dessa forma irá mostrar os números diferentes de 0
+------------------------------------------------------------------------------------
+-também há o find que irá achar o primeiro numero que colocarmos para procurar
+
+------------------------------------------------------------------------------------
+
+	EX: 
+		myArray.find(n => n > 5)
+		//irá retornar o primeiro numero maior que cinco de forma linear
+o findIndex irá retornar o numero anterior ao numero procurado
+------------------------------------------------------------------------------------
+- conseguimos também saber se há algum numero com a especificação que procuramos
+com o comando some 
+* myArray.some(n => n%2 !==0)
+//irá verificar se há algum(some) numero que é impar
+- o reduce serve para juntarmos elementos diferentes no nosso array 
+* myArray.reduce((acumulado, atual) => acumulado + atual)
+- o sort é um comando de ordenação, ele serve para ordenar em ordem nosso array ele
+funciona do seguinte modo
+* se quisermos dizer que o numero é maior que o primeiro elemento temos que 
+retornar 1 se o primeiro numero for igual ao segundo se retorna 0
+- como é simples o código e não há outras condições podemos usar o operador
+ternario
+*myArray.sort((a,b) => a > b ? 	1: -1)
+//dessa forma ordenamos nosso Array
+-para aumentar os elementos do array usamos o comando map 
+*myArray.map(n => n*2)
+//irá multiplicar todos os numeros por 2	
+------------------------------------------------------------------------------------	
+-da mesma forma temos o forEach que é um looping que pega cada um dos elementos
+*isso serve para trabalharmos com os valores mas se quisermos alterar os valores 
+usamos o map, para trasformar os arrays
+================================métodos em arrays====================================================
+-temos outras formas além do método líteral de declarar um array 
+*uma das formas alternativas é dessa forma:
+
+------------------------------------------------------------------------------------
+	EX:
+		var myArray = Array(n..)
+
+
+//há algo ruim de declarar dessa forma pois se colocarmos somente um numero dentro 
+desse determinado array o sistema irá retornar 5 arrays com elementos vazios isso
+causa inconcistencia
+
+
+*para usarmos dessa forma incrementamos o comando of então resolvemos o problema
+------------------------------------------------------------------------------------
+-também temos o concat que irá concatenar arrays da seguinte forma:
+*myArray.concat(myArray2)
+irá juntar os valores dos dois arrays
+-outra função util é  a includes que verificamos se há algum número dentro do 
+Array
+-temos o IndexOf() que indica onde está o determinado elemento (em qual posição
+ele está
+-o comando join é outra forma de juntar um array a uma string ou a um número
+-o reverse inverte todas as funçoes de um array então se temos os numeros 1,2 e 3
+teremos 3,2 e 1
+-a função push serve para iserirmos elementos no final de um Array	 	
+-se quisermos remover elementos usamos a função pop que retira um elemento do final
+do array
+-para inserirmos elementos no começo do array usamos a função unshift
+-para removermos do começo usamos a função shift
+-remover do meio podemos usar a função splice
+*passamos o indice de onde o elemento está e dizemos qual elemento queremos tirar
+para inserirmos é da mesma forma
+*myArry.splice(2,0, 'usagdiun') 
+//passamos o indice em qual posição está e depois colocamos o que queremos inserir
+!//colocamos o zero no segundo numero para dizer que não iremos apagar nada
+-slice serve para pegarmos elementos especificos de nosso array, fica da seguinte 
+forma, primeiro indicamos por qual indice queremos pegar até onde nós queremos, 
+vamos colocar até o ultimo colocando o um elemento depois, pois ele irá até o 
+ elemento anterior.
+----------------------------------------------------------------------------------
+===================================Arrays multidimensionais===========================
+As matrizes são aulas práticas*****
+	

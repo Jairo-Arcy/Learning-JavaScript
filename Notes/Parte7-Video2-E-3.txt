@@ -1,0 +1,92 @@
+==================================================================================
+--------------------------------------JavaScript Basic----------------------------
+------------------------Functions-------------------------------------------------
+==================================================================================
+	Imagine que você queira calcular a soma de todos os números de 1 a 100, 
+como fizemos anteriormente.Porém, agora você terá que fazer essa conta em 
+vários lugares do seu programa. Imagine o trabalho de ter que copiar e colar o 
+mesmo código em vários lugares! E se fosse uma conta mais complexa e 
+você tivesse que alterar algo na lógica? Daria muito mais trabalho 
+arrumar em vários lugares.
+	Essa é uma das razões de termos o que chamamos de Funções.Funções são 
+basicamente um conjunto de linhas de código que 
+podemos chamar a qualquer hora.Então, podemos criar uma função que 
+faça esse cálculo para nós, e chamá-la onde precisarmos.
+
+--------------------------------Dica---------------------------------------------
+
+	Um ótimo jeito de deixar o seu código mais limpo e 
+fácil de manter é sempre 
+criar funções que tenham apenas uma 
+responsabilidade, ou seja, não devem fazer mais de uma coisa. 
+Também tente fazer com que a função não tenha mais de 20 linhas. 
+Se tiver mais de 20 linhas, provavelmente ela estará fazendo 
+mais de uma coisa.
+---------------------------------Dica2--------------------------------------------
+
+	Caso em algum momento você pense em copiar um código e colar 
+em outro lugar, provavelmente você estará precisando 
+de reutilização de código, indicando que provavelmente 
+você está precisando criar uma função para evitar código repetido.
+
+----------------------------------------------------------------------------------
+===================================Function in JavaScript=========================
+	Cada linguagem de programação já vem com algumas funções que 
+executam tarefas muito úteis, nos poupando o trabalho de ter que ficar 
+criando certas funções todas as vezes que estivermos escrevendo um novo código.
+	Um exemplo simples é o Math.round(), função que arredonda um 
+número para o inteiro mais próximo:
+	    *- Math.round(5.2) // retorna 5
+| Math.round(5.8) // retorna 6|
+  	Veja que para executar uma função temos que usar 
+parênteses "( )". Nos parênteses nós podemos passar valores. Isso é muito bom, 
+pois nos possibilita usar variáveis em nossas funções, 
+deixando-as bem reutilizáveis.
+==================================================================================
+-as Funções podem ser executadas com setTimeout que é o tempo que ela 
+será executada.
+----------------------------------------Arrow Functions---------------------------
+-As arrow Functions Começam pelos parenteses não há o comando (Function)
+ EX:
+	setTimeout ( () => { console.log('def') }, 2000); (UM exemplo de 
+12:44 10/11/2018Arrow Functions.)
+
+*São chamadas Arrow function por causa do "=>" que paree uma flecha.
+
+-No javaScript as Funções não precisam ter necessariamente ser chamadas em outras
+ para serem executadas se caso nós chamarmos uma Função que não seja conhecida 
+dentro do código e declarar uma função anonima, o CallBack será reconhecido para esssa função.
+ EX:
+	Function myFunction (otherFunction) {
+	console.log(otherFunc());
+}
+  mtFunction(function(){return 123;}); 
+
+	*Para Transformar essa Function em Arrow basta trocar para "=>"
+
+	EX:
+		Function myFunction (otherFunction) {
+	console.log(otherFunc());
+}
+  mtFunction(=> (){return 123;}); 
+----------------------------------------------------------------------------------
+-Essencialmente as Arrow Functions são para Códigos simples e pequenos, porém
+Fazem a mesma coisa que outras funções fazem, mas seu Diferencial está quando só 
+escrevemos uma linha de código, nesse caso não há necessidade de usar parenteses.
+	EX:
+		myFunction(()=>  10 + 5);
+----------------------------------------------------------------------------------
+ - quando há também spmente um parametro podemos omitir os parenteses das
+ Arrow Functions
+	EX:
+		myFunction(myFunction2 => 10 + 5);
+----------------------------------------------------------------------------------
+-As arrow Functions servem para facilitar o trabalho de um programador diminui 
+consideralvelmente o código, Veja no Exemplo.
+	EX:
+		/*Functions normais*/
+		myFunction(function(myFunction2) {
+		return 10 + 5;
+	})
+----------------------------------------------------------------------------------
+ 

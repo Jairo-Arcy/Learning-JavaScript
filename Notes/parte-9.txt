@@ -1,0 +1,40 @@
+==============================Números propriedades e metodos===========================================
+-há algumas propriedades que retornam informações interessantes no javascript
+algumas delas são essas:
+*number.EPSILON
+uma constante
+* number.MAX_SAFE_INTEGER(mostra o quanto de numeros no maximo 
+de inteiros é seguro usar)
+*number.MIN_SAFE_INTEGER(mostra o minimo de numeros inteiros que é possivel usar
+number.isfinite()
+verifica se o numero é finito 
+number.isInteger()
+verifica se o numero é inteiro
+number.isNaN()
+verifica se não é um numero
+-há uma pequena diferença entre a função global isNaN 
+se ja não for um numero dentro da função ele irá retornar false 
+porem dentro da propriedade NaN se não for NaN é falso.
+toFixed(uma função global bem usada para formatar numeros reais)
+----------------------------------------------------------------------------------
+====================================Objeto Math==============================================
+-O objeto math trabalha com calculos matemáticos
+Alguns dos métodos math são:
+
+-math.pow(n, n): eleva o numero
+-math.sqrt(n): raiz quadrada
+-math.abs(n): valor absoluto do numero
+-math.ceil(n): arredonda o numero para cima
+-math.floor(n): arredonda para baixo
+-math.round(n):arredonda para o numero mais proximo
+-math.trunc(n):pega a parte inteira do numero sem arredondar
+-math.max(n...):retorna o maior numero
+-math.min(n...):retorna o menor numero
+-math.ramdom():retorna numeros aleatórios entre 0 e 1
+(se quisermos numeros de 1 a 10 basta multiplicarmos o numero por 2 e somar 1)
+----------------------------------------------------------------------------------
+
+	EX:
+		(math.trunc(math.ramdom() * 10) + 1)
+//para ir realmente de 1 a 10
+---------------------------------------------------------------------------------- 

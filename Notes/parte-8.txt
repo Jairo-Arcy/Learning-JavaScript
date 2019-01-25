@@ -1,0 +1,201 @@
+==============================Objects in JavaScript===============================
+------------------------Part8-----------------------------------------------------
+	Anteriormente vimos sobre os tipos primitivos do JavaScript, como Number e 
+String. Porém, como o nome diz, são "primitivos".
+Conforme vamos evoluindo nosso código, precisamos de coisas mais 
+complexas e com mais funcionalidades.É aí que surgem os Objetos.
+	Objetos são basicamente um modo de agrupar valores.Podemos pensar neles 
+como os objetos existentes no mundo real.Vamos usar um lápis com borracha 
+como exemplo.Os objetos que temos no mundo real 
+possuem características e servem para realizarmos alguma tarefa.Os objetos na 
+programação também são assim: possuem propriedades e funções.
+Como propriedades do lápis acima, podemos dizer que sua cor é 
+amarela e vamos dizer que seu comprimento é de 15 cm.
+Como funções, podemos dizer que ele escreve e também apaga.Imagine só a bagunça 
+se tivéssemos que criar variáveis pelo nosso programa para definir um mesmo objeto.
+----------------------------------------------------------------------------------
+
+	EX:
+		var pencilColor = 'yellow';
+
+		var pencilLength = 15;
+
+		function pencilWrite() { … }
+
+		function pencilErase() { ... }
+----------------------------------------------------------------------------------
+
+	Ainda pior, se tivéssemos mais de um objeto igual, 
+mas com valores diferentes. E se quisermos criar um novo lápis?
+É aí que entram os objetos. Eles servem para agruparmos variáveis e 
+funções para representar algum objeto, sendo ele real ou não.
+	Anteriormente vimos a função Math.round(). A função "round()" 
+vive dentro do Objeto Math, que possui funções para trabalharmos com cálculos.
+----------------------------------------------------------------------------------
+======================================Objetos=====================================
+--------------------------------objetos literais----------------------------------
+-os Objetos devem ser armazenados em variáveis para podermos acessa-los depois.
+são guardados entre chaves
+- Separamos Objetos por virgula, pois não estamos declarando comandos, estamos 
+apenas listando.
+----------------------------------------------------------------------------------
+
+		EX:
+	var myObj = {
+		length: '15',
+		color: 'yellow',
+		write: function() {
+
+		console.log('hello');
+		}
+		
+	}
+	*para chamarmos esse objeto basta colocar seu nome como se segue no 
+exemplo.
+----------------------------------------------------------------------------------
+		EX:
+
+			myObj.(e o nome da propriedade)
+----------------------------------------------------------------------------------
+-Outra forma de acessar um objeto é passando ele com conchetes (myObj['length']) e
+com Strings.
+-a vantagem de se chamar o objeto dessa forma é passar o valor de algo dentro do 
+objeto para uma variavel e dessa forma podemos chama-lo da seguinte forma:
+-----------------------------------------------------------------------------------
+	EX:
+		var prop = 'color'
+		myObj[prop]
+	//irá imprimir 'Yellow'
+	*para passar uma função segue-se da mesma forma incrementando os 
+	PARENTESES após os conchetes.
+----------------------------------------------------------------------------------
+- para alterar o valor segue-se da mesma declaração do objeto, porém colocando o 
+"=".
+----------------------------------------------------------------------------------
+	EX:
+		myObj.length= 20
+		//resultado:20;
+	*para apagar basta colocar o comando delete
+		delete myObj.length
+		//se der certo irá ser retornado true
+----------------------------------------------------------------------------------
+-também podemos fazer com javaScript uma declaração de função da seguinte forma
+dentro do objeto.
+----------------------------------------------------------------------------------
+	EX:
+		write() {
+
+		console.log('hello');
+	}
+		*tiramos o comando function e será a mesma coisa.
+----------------------------------------------------------------------------------
+- como estamos escrevendo dessa forma uma função anonima podemos escrever com 
+arrow functions também.
+----------------------------------------------------------------------------------
+===================================IMPORTANTE=====================================
+-caso seja navegadores mais antigos, a função deve ser escrita da forma padrão
+==================================================================================
+-podemos apagar e incluir propriesdes, já que o javaScript e uma linguagem 
+dinamica.
+*colocamos novos valores da mesma forma que tiramos.
+----------------------------------------------------------------------------------
+=====================================Arrays=======================================
+	Agora que vimos o que são objetos, vamos ver o que são Arrays.Arrays 
+também são objetos. Pense neles como simples listas.Assim como as strings são 
+delimitadas por aspas, os Arrays são delimitados com colchetes "[ ]". 
+Cada elemento é separado por uma vírgula.Então, se quisermos uma lista de números, 
+podemos escrever assim:
+----------------------------------------------------------------------------------
+	EX:
+		[1, 2, 3, 4, 5]
+----------------------------------------------------------------------------------
+As linguagens de programação normalmente só permitem um mesmo tipo de valor em 
+um Array, mas no JavaScript podemos ter qualquer valor de qualquer tipo em um 
+mesmo Array, como Numbers, Strings, Objetos e outros Arrays:
+----------------------------------------------------------------------------------
+	EX:
+		[ 1, "ABC", [5, 6], true ]
+----------------------------------------------------------------------------------
+
+Use Arrays sempre que precisar de uma lista, por exemplo:
+	Podemos criar um objeto de sala de aula. Como propriedades, a sala 
+pode ter um número, o professor responsável, quantidade de carteiras, etc.
+Porém, não faz sentido ter uma propriedade "aluno1", "aluno2", "aluno3", etc. 
+Faz muito mais sentido termos uma propriedade chamada "alunos", e ela seria 
+uma lista (um Array) de alunos. Quando precisarmos remover ou 
+adicionar um aluno, basta incluir na lista ao invés de mudar as propriedades do 
+objeto.
+---------------------------------------Dica---------------------------------------
+	Mesmo que o JavaScript permita vários elementos de tipos diferentes em 
+um mesmo Array, isso normalmente não fará sentido quando você estiver 
+desenvolvendo algum código. Pense nos Arrays como uma lista de um mesmo elemento,
+como no exemplo acima, onde temos uma lista de alunos. Não faz sentido colocar 
+outra coisa no meio da lista de alunos, como professores, números ou materiais 
+escolares.
+----------------------------------------------------------------------------------
+=======================================JSON============================================
+-Java Script Object Notation(JSON(se pronuncia JASON)
+-Significa que os objetos são escritos com uma notação de objeto JavaScript
+-JSON não recebe funções, somente propriedes e tipos primitivos
+-Há algumas conversões feitas no JSON para valor String, Porém após essa conver-
+são, o valor passa a ser um objeto novamente, e perde a função de Write
+========================================Referências===============================
+-Os Objetos são referenciados após serem jogados dentro de uma variavel.
+-Caso você passe uma váriavel para outra que contem um objeto ela irá receber uma
+referência de todo o objeto que contém nela.
+- A referência só ocorre quando o objeto é referênciado, ou seja, uma passagem de
+valores.
+----------------------------------------------------------------------------------
+	EX:
+		var myObj = myObj2;
+----------------------------------------------------------------------------------
+==============================Objetos, Variáveis e Arrays=========================
+-há como passar Arrays e objetos para variaveis da seguinte forma.
+**Após criar um Array e um objeto basta colocar como paraemetro com no seguinte
+exemplo
+----------------------------------------------------------------------------------
+	EX:
+		Para Arrays
+			var a = myArray [0],
+			var b = myArray[1],
+			var c = myArray[2];
+		Para Objetos
+			var d = myObj.d,
+			var e = myObj.e,
+			var f = myObj.f; 
+----------------------------------------------------------------------------------
+-há uma forma muito mais facil hoje de fazer isso.
+----------------------------------------------------------------------------------
+	EX:
+		var[a, b, c] = [1,2,3]
+		Sendo assim a lista de variavel terá esses respectivos valores.
+
+		Para Objetos fica dessa forma:
+			var{d, e, f} = myObj
+		//as duas formas as variaveis vão receber um valor de dentro de 
+		um array ou de dentro de um Objeto
+		//nos objetos as variaveis tem de ser do mesmo nome do objeto
+----------------------------------------------------------------------------------
+==================================Operador Spread===================================
+-abre os valores de um array
+-se usarmos o comando "..." será mais simples para declarar os valores de um 
+array
+-dessa forma há com abrir um array dentro de um array mostrando junto os elemen-
+tos dos dois ou mais arrays. 
+----------------------------------------------------------------------------------
+	EX:
+		var myArray = [1,2,3];
+		var myArray2 = [4,5,6];
+
+		//para mostra ficaria da seguinte forma:
+		[123, ...myArray2]
+		//mostraria 1,2,3,4,5,6	
+
+		//de outra forma ficaria assim:
+			[...myArray, ...myArray2]
+
+----------------------------------------------------------------------------------
+==============================for in and for of===============================================
+-o for in serve para interar sobre as propriedas do elementos
+-o for of serve para imprimir os valores e não as popriedades
+ 

@@ -1,0 +1,16 @@
+===================================parte-13==================================================
+-keys retornara um array com todas as chaves
+-temos também os values que retorna os valores 
+- temo també a função global hasOwnProperty que verifica se há determinado elemento 
+em um objeto
+*usamos de forma mais prática o comando in que retorna facilmente se há o elemento
+ou não 
+-o comando seal sela o objeto que podemos alterar o valor das propriedades porém 
+não conseguimos adicionar novos valores
+*não conseguimoss também deletar essas propriedades
+- a função freeze não podemos nem alterar o valor da propriedade 
+* para sabermos se o objeto está selado ou congelado temos a função isSealed ou 
+isFrozen
+===============================métodos get e set====================================
+-prático
+====================================================================================

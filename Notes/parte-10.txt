@@ -1,0 +1,23 @@
+====================================parte-10======================================
+-o indexOf serve para achar na minha string onde está determinada palavra ou letra
+*não é eficiente para encontrar duas letra da mesma forma em uma mesma string
+- Para achar a ultima letra usamos o lastindexOf('') 
+- temos também  comando repeat que repete a palavra em uma ou mais vezes
+repeat(n);
+- há como pegar a palavra de um ponto epecífico até outro com substr(n, n)
+de 0 até 5 ou de 0 até o final da string( lembrando que o tamanho começa sempre
+ com 0)
+-como o tamanho da string também conta os espaços a função anterior irá pegar 
+e retornar até os espaços, iniciando no 2 por exemplo,  acabando no 5 sem contar
+os espaços porém, o comando substring irá encerrar na posição 5 contando os espaços
+ele conta como 5 o espaço
+-toUpperCase() serve para deixar toda a string maiúscula
+-toLowerCase() para deixar minuscula
+-trim serve para remover espaços vazios
+* se quisermos remover os espaços vazios a direita usamos o 
+trimRight()
+a esquerda trimLeft()
+e somente o trim tira todos os espaços vazios
+-o comando split serve para cortar a string e dividi-la em outro array para 
+usarmos separadamente 
+	

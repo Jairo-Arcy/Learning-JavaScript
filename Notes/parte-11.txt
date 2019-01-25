@@ -1,0 +1,9 @@
+========================================Parte-11====================================
+-Date é um objeto que uma função global que temos que declarar da seguinte forma:
+*new Date();
+- e assim ele mostrará a data atual.
+-para pegar o dia usamos o getDate
+-mas para retornarmos os dias da semana usamos o getDay() que irá retornar de sabado
+a domingo (0 a 6)
+o codigo irá mostrar somente 6.
+====================================================================================

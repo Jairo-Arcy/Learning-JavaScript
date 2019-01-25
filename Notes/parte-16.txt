@@ -1,0 +1,36 @@
+==================================parte-16==========================================
+Eventos são ações que ocorrem quando algo acontece, como o carregamento da página, 
+clique do mouse, pressionamento de uma tecla do teclado, rolagem da tela, etc.
+Quando esses eventos ocorrem nós podemos indicar que uma função deve ser executada.
+Assim podemos responder às interações do usuário, deixando nossa página mais 
+dinâmica e interativa.Há centenas de eventos, e sempre que funcionalidades novas 
+surgem, novos eventos são adicionados.Aqui veremos os mais comuns. Como o uso de 
+todos os eventos é igual, você já estará apto a usar qualquer evento.
+=======================================tabela======================================
+click: disparado quando um clique é feito com o botão esquerdo do mouse
+
+dblclick:disparado quando um duplo clique é feito com o botão esquerdo do mouse
+
+contextmenu:disparado quando o botão direito do mouse é clicado
+
+mousemove:disparado continuamente enquanto o cursor se mover sobre um elemento
+
+mousedown:disparado quando o botão esquerdo do mouse for pressionado
+
+mouseup:disparado quando o botão esquerdo do mouse for solto
+====================================================================================
+======================================tabela2==============================================
+click:disparado quando um clique é feito com o botão esquerdo do mouse
+dblclick:disparado quando um duplo clique é feito com o botão esquerdo do mouse
+contextmenu:disparado quando o botão direito do mouse é clicado
+mousemove:disparado continuamente enquanto o cursor se mover sobre um elemento
+mousedown:disparado quando o botão esquerdo do mouse for pressionado
+mouseup:disparado quando o botão esquerdo do mouse for solto
+====================================================================================
+====================================tabela-3================================================
+resetd:isparado quando o formulário for apagado
+submit:disparado quando o formulário for enviado
+focus:disparado quando um elemento recebe foco
+blur:disparado quando um elemento perde foco
+====================================================================================
+-site da mozilla tem outras refenrencias de html só colocar mozilla developer
